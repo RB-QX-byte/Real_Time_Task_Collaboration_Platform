@@ -1,18 +1,17 @@
-import express from 'express';
-import { Mongoose } from 'mongoose';
+import mongoose from 'mongoose';
 
-const ListsSchema = new express.Schema({
+const ListsSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
     },
     board: {
-        type: express.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Board',
         required: true,
     },
     tasks: [{
-        type: express.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Task',
     }],                                                       //Embedded ref for tasks, as they are closely related to the list and often accessed together
     position: {

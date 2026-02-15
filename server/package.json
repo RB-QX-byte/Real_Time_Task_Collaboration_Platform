@@ -1,11 +1,11 @@
 {
-  "name": "backend for the real-time task collaboration platform",
+  "name": "task-collaboration-backend",
   "version": "1.0.0",
-  "description": "This is the backend for the real-time task collaboration platform. It is built using Express and MongoDB es6 modules, only for the backend",
+  "description": "Backend for the Real-Time Task Collaboration Platform. Built with Express, MongoDB, and Socket.IO.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --forceExit --detectOpenHandles",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "build": "echo \"No build step required for backend\""
@@ -18,6 +18,7 @@
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
+    "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.2.1",
     "nodemon": "^3.1.11",
