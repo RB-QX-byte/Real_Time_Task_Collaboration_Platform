@@ -20,7 +20,13 @@ A modern, full-stack Trello/Notion-inspired task management application with rea
 
 ## Demo
 
-![App Demo](.imgs/demo.gif)
+![App Demo](.imgs/img1.png)
+![App Demo](.imgs/img2.png)
+![App Demo](.imgs/img3.png)
+![App Demo](.imgs/img4.png)
+![App Demo](.imgs/img5.png)
+![App Demo](.imgs/img6.png)
+![App Demo](.imgs/img7.png)
 
 ## Demo Credentials
 
