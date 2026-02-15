@@ -18,6 +18,10 @@ A modern, full-stack Trello/Notion-inspired task management application with rea
 - ** Modern UI**: Clean light-mode design with Shadcn-UI components
 - ** Animations**: Smooth Framer Motion transitions
 
+## Demo
+
+![App Demo](.imgs/demo.gif)
+
 ## Demo Credentials
 
 After starting the application, create an account with:
