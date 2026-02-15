@@ -6,19 +6,19 @@ A modern, full-stack Trello/Notion-inspired task management application with rea
 ![Socket.IO](https://img.shields.io/badge/Socket.IO-Real--time-blue)
 ![Redux](https://img.shields.io/badge/Redux-State-purple)
 
-## ✨ Features
+##  Features
 
-- **🔐 Authentication**: Secure JWT-based signup/login
-- **📋 Boards**: Create and manage multiple task boards
-- **📝 Lists & Tasks**: Organize tasks in customizable lists
-- **🔀 Drag & Drop**: Move tasks across lists with @dnd-kit
-- **👥 Collaboration**: Assign members to tasks, real-time updates
-- **🔍 Search**: Global search across boards, lists, and tasks
-- **📊 Activity Log**: Track all board activities in a sidebar panel
-- **🎨 Modern UI**: Clean light-mode design with Shadcn-UI components
-- **✨ Animations**: Smooth Framer Motion transitions
+- ** Authentication**: Secure JWT-based signup/login
+- ** Boards**: Create and manage multiple task boards
+- ** Lists & Tasks**: Organize tasks in customizable lists
+- ** Drag & Drop**: Move tasks across lists with @dnd-kit
+- ** Collaboration**: Assign members to tasks, real-time updates
+- ** Search**: Global search across boards, lists, and tasks
+- ** Activity Log**: Track all board activities in a sidebar panel
+- ** Modern UI**: Clean light-mode design with Shadcn-UI components
+- ** Animations**: Smooth Framer Motion transitions
 
-## 🎯 Demo Credentials
+## Demo Credentials
 
 After starting the application, create an account with:
 ```
@@ -27,7 +27,7 @@ Password: demo1234
 ```
 Or sign up with any credentials. Open two browser tabs to test real-time collaboration.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v18+)
@@ -92,7 +92,7 @@ npm test
 
 6. **Access the App**: Open `http://localhost:5173`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Real_Time_Task_Collaboration_Platform/
@@ -116,7 +116,7 @@ Real_Time_Task_Collaboration_Platform/
         └── lib/          # Utility functions
 ```
 
-## 📐 Database Schema
+## Database Schema
 
 ```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
@@ -145,7 +145,7 @@ Real_Time_Task_Collaboration_Platform/
 * = required field
 ```
 
-## 🔌 API Contract
+## API Contract
 
 ### Authentication
 | Method | Endpoint | Body | Response |
@@ -191,7 +191,7 @@ Real_Time_Task_Collaboration_Platform/
 |--------|----------|-------|----------|
 | GET | `/api/search` | `?q=keyword` | `{ results }` |
 
-## 🔄 Real-Time Sync Strategy
+## Real-Time Sync Strategy
 
 Socket.IO is used for bi-directional real-time communication:
 
@@ -201,7 +201,7 @@ Socket.IO is used for bi-directional real-time communication:
 4. **Events**: `taskCreated`, `taskUpdated`, `taskMoved`, `taskDeleted`, `listCreated`, `listDeleted`, `boardCreated`, `boardUpdated`, `boardDeleted`, `taskAssigned`, `taskUnassigned`
 5. **Client handling**: React components listen for events and update local state immediately
 
-## 🏗️ Architecture
+## Architecture
 
 ### Frontend
 - **State Management**: Redux Toolkit with `createAsyncThunk` for API calls
@@ -218,7 +218,7 @@ Socket.IO is used for bi-directional real-time communication:
 - **Socket.IO**: Integrated with HTTP server, room-based broadcasting
 - **Error handling**: Global error middleware with consistent `{ success, message }` response format
 
-## 📈 Scalability Considerations
+## Scalability Considerations
 
 | Concern | Current Approach | Scaling Strategy |
 |---------|-----------------|------------------|
@@ -237,7 +237,7 @@ Socket.IO is used for bi-directional real-time communication:
 - **No pagination on board page**: Tasks load all at once. For large boards, implement cursor-based pagination.
 - **Light mode only**: Simplified UI design decision for this assignment.
 
-## 🧪 Testing
+## Testing
 
 ```bash
 cd server
@@ -251,14 +251,14 @@ Tests cover:
 - Search API auth middleware
 - 404 route handling
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 👤 Author
+## Author
 
 **Rachit Borkar**
 
 ---
 
-**Built with ❤️ using the MERN stack**
+**Built with using the MERN stack**
