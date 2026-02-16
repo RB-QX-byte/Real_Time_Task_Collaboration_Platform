@@ -3,7 +3,7 @@ services:
     name: task-collaboration-backend
     env: node
     plan: free
-    root: server
+    rootDir: server
     buildCommand: npm install
     startCommand: npm start
     envVars:
